@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Travel Advisor | Work From Paradise</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            /* Iconic Ocean View */
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #0ea5e9, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Pulse animation for the CTA button */
+        .pulse-btn {
+            animation: pulse-blue 2s infinite;
+        }
+        @keyframes pulse-blue {
+            0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(14, 165, 233, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Navigation (Simple) -->
+    <nav class="absolute top-0 w-full z-50 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white font-bold text-xl tracking-widest uppercase border-2 border-white px-4 py-1">
+                Travel & Earn
+            </div>
+            <a href="#contact" class="hidden md:block bg-white text-blue-600 px-6 py-2 rounded-full font-bold hover:bg-blue-50 transition shadow-lg">
+                Join the Team
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center hero-bg text-center px-4">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/30 bg-gradient-to-b from-black/40 to-transparent"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto fade-in-up">
+            <p class="text-white text-lg md:text-xl uppercase tracking-[0.3em] mb-4 font-semibold text-shadow">Don't just watch the world go by</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl text-white font-bold mb-6 leading-tight drop-shadow-lg">
+                Turn Your <span class="italic text-cyan-300">Passion</span> Into <br> Paychecks.
+            </h1>
+            <p class="text-gray-100 text-lg md:text-2xl mb-10 max-w-2xl mx-auto font-light">
+                Become an Independent Travel Advisor. Work remotely, earn commissions, and unlock exclusive travel perks for yourself.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contact" class="pulse-btn bg-cyan-500 hover:bg-cyan-600 text-white text-lg font-bold py-4 px-10 rounded-full transition transform hover:scale-105 shadow-xl border-none">
+                    Get The Zoom Link
+                </a>
+                <a href="#details" class="bg-white/20 backdrop-blur-sm border border-white/50 text-white hover:bg-white hover:text-blue-900 text-lg font-semibold py-4 px-10 rounded-full transition">
+                    Learn More
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 animate-bounce text-white">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </header>
+
+    <!-- Urgency Bar -->
+    <div class="bg-blue-900 text-white py-3 text-center">
+        <p class="text-sm md:text-base font-medium">
+            <i class="fas fa-clock mr-2 text-yellow-400"></i>
+            <span class="font-bold text-yellow-400">NEXT INFO SESSION:</span> Spots are filling fast. Secure your invite today!
+        </p>
+    </div>
+
+    <!-- The Opportunity (Problem/Solution) -->
+    <section id="details" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Why Pay For Travel... <br><span class="serif-font italic text-blue-600">When It Could Pay You?</span></h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                    You are already booking travel for yourself, finding deals for friends, and scrolling through dream destinations. Imagine turning that time into a profitable income stream. We give you the keys to the kingdom.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 transition">
+                        <i class="fas fa-laptop-house text-2xl text-blue-600 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Work From Anywhere</h3>
+                    <p class="text-gray-600">
+                        Total freedom. Your office can be a coffee shop in Paris, a beach in Bali, or your sofa at home. All you need is Wi-Fi.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-teal-600 transition">
+                        <i class="fas fa-plane-departure text-2xl text-teal-600 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">All-In-One Booking</h3>
+                    <p class="text-gray-600">
+                        Exclusive access to our professional back-office. Book flights, 5-star hotels, car rentals, and excursions in one seamless platform.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition">
+                        <i class="fas fa-sack-dollar text-2xl text-yellow-600 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Earn Commissions</h3>
+                    <p class="text-gray-600">
+                        Earn on every booking you make for clients, friends, family... and yes, earn commission on your <span class="font-bold text-gray-900">own</span> trips too!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 'Secret' Perk Section -->
+    <section class="py-20 bg-blue-50 relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+
+        <div class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Travel" class="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition duration-500">
+            </div>
+            <div class="md:w-1/2">
+                <span class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-2 block">The Insider Advantage</span>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900">Travel Like an Insider, Pay Like an Agent.</h2>
+                <p class="text-gray-700 text-lg mb-6">
+                    The benefits don't end at earning income. As an independent advisor, you unlock the door to the industry's best-kept secrets.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                        <span class="font-semibold text-gray-800">Exclusive Travel Agent Rates on Hotels & Resorts</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                        <span class="font-semibold text-gray-800">Upgrade Opportunities & VIP Treatment</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                        <span class="font-semibold text-gray-800">FAM Trips (Familiarization Trips) at drastically reduced costs</span>
+                    </li>
+                </ul>
+                <div class="mt-8 p-4 bg-white rounded-lg border-l-4 border-blue-500 shadow-sm">
+                    <p class="italic text-gray-600">"I booked my family vacation to Mexico and saved $1,200, PLUS I earned commission on my own booking. It's a no-brainer."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-gray-900 text-white relative">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        
+        <div class="container mx-auto max-w-4xl relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 serif-font">Are You Ready to Take Off?</h2>
+            <p class="text-xl text-gray-300 mb-12">
+                The travel industry is booming. Don't let this plane leave without you. <br>
+                Request the link for our exclusive <strong>Zoom Information Session</strong> now.
+            </p>
+
+            <div class="glass-panel text-gray-800 p-8 md:p-12 rounded-3xl shadow-2xl max-w-2xl mx-auto">
+                <form onsubmit="handleSubmit(event)" class="space-y-6 text-left">
+                    <div>
+                        <label class="block text-sm font-bold mb-2 text-gray-600 uppercase">Your Name</label>
+                        <input type="text" placeholder="Jane Doe" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2 text-gray-600 uppercase">Your Email Address</label>
+                        <input type="email" placeholder="jane@example.com" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-bold text-xl py-4 rounded-lg shadow-lg transform transition hover:-translate-y-1">
+                        Send Me The Zoom Link <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                    
+                    <p class="text-xs text-center text-gray-400 mt-4">
+                        By clicking send, you agree to receive information about this opportunity. No spam, ever.
+                    </p>
+                </form>
+
+                <!-- Success Message (Hidden by default) -->
+                <div id="success-message" class="hidden text-center py-10">
+                    <div class="text-green-500 text-6xl mb-4"><i class="fas fa-check-circle"></i></div>
+                    <h3 class="text-2xl font-bold text-gray-800">You're on the list!</h3>
+                    <p class="text-gray-600 mt-2">Check your inbox shortly for the Zoom details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 py-8 text-center text-sm">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Independent Travel Advisors. All Rights Reserved.</p>
+            <p class="mt-2">Live Life on Your Terms.</p>
+        </div>
+    </footer>
+
+    <!-- Simple Script for Form Interaction -->
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const successMsg = document.getElementById('success-message');
+            
+            // Simulate sending data
+            const btn = form.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                form.style.display = 'none';
+                successMsg.classList.remove('hidden');
+                successMsg.classList.add('fade-in-up');
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
+
